@@ -4,23 +4,61 @@
 
  }
 
+ ul,
+ ul li {
+     margin: 0;
+     padding: 0;
+     text-indent: 0;
+     list-style-type: none;
+     display: inline-block;
+ }
+
+ .menu {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+
+
+     /*background: #293752;*/
+
+     font-family: "Raleway";
+     color: white;
+     font-weight: bold;
+     font-size: 2em;
+
+     background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+     padding: 0.4em;
+ }
+
+ .menu a {
+     color: white;
+     text-decoration: none;
+ }
+
+ .menu li + li {
+     margin-left: 0.5em;
+ }
+
+ .menu-button {
+     display: none;
+ }
+
+ /* Splash start */
+
+ .splash img {
+     height: 100vh;
+ }
+
+ /* Splash end */
+
 
  img {
      display: block;
-     max-width: 100%;
-     height: auto;
-     /*     margin: 100px;*/
- }
+     width: 100%;
+     height: 25em;
 
- font-family: 'Raleway',
- sans-serif;
-
- .splash {}
-
- .menu {
-     background-color: #485F8C;
-     margin: 0px;
-
+     object-fit: cover;
  }
 
  /*forside start*/
@@ -60,21 +98,19 @@
      grid-gap: 0.8em;
      border: 10px;
 
+     border: white solid 0.8em;
  }
 
  .content {
      grid-gap: 1em;
      border-radius: 2px;
      padding: 7px;
-     text-align: center;
-
-
-
-
  }
 
-
-
+ .content button {
+     display: block;
+     margin: auto;
+ }
 
 
  /*forside slut*/
@@ -84,13 +120,10 @@
 
 
 
- /*
 
- fronterimg img {
-     height: 300px;
-
+ .fronterimg img {
+     object-position: top;
  }
-*/
 
  .Web {
      background-color: #485F8C;
@@ -118,22 +151,6 @@
  }
 
 
- /*
-
- fronterimg1 {
-     grid-column-start: 1;
-     grid-column-end: 2;
- }
-
- fronterimg2 {
-     grid-column-start: 2;
-     grid-column-end: 3;
- }
-*/
-
-
-
-
  /*Knap start*/
  .button {
      display: inline-block;
@@ -145,7 +162,6 @@
      font-size: 1.5rem;
      padding: 8px;
      width: 120px;
-     transition: all 0.5s;
      cursor: pointer;
      margin: 5px;
 
@@ -189,7 +205,7 @@
 
 
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 750px) {
      .gridContent {
          display: grid;
          grid-template-columns: 1fr;
@@ -197,6 +213,18 @@
          grid-gap: 0.5em;
          border: 10px;
 
+     }
+
+     .splash img {
+         height: 20rem;
+     }
+
+     .menu-button {
+         display: block;
+     }
+
+     .menu-list {
+         display: none;
      }
 
  }
