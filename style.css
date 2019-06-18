@@ -15,6 +15,14 @@
  font-family: 'Raleway',
  sans-serif;
 
+ .splash {}
+
+ .menu {
+     background-color: #485F8C;
+     margin: 0px;
+
+ }
+
  /*forside start*/
 
 
@@ -27,6 +35,8 @@
  p {
      margin: 5px;
  }
+
+
 
 
  h1 {
@@ -54,7 +64,6 @@
 
  .content {
      grid-gap: 1em;
-     background-color: gray;
      border-radius: 2px;
      padding: 7px;
      text-align: center;
@@ -67,16 +76,47 @@
 
 
 
+
  /*forside slut*/
 
  /*content*/
+
+
+
+
+ /*
 
  fronterimg img {
      height: 300px;
 
  }
+*/
 
- .Web {}
+ .Web {
+     background-color: #485F8C;
+ }
+
+
+ .Animation {
+     background-color: #D8D8D8;
+ }
+
+ .Indhold {
+     background-color: #D8D8D8;
+ }
+
+ .Redesign {
+     background-color: #485F8C;
+ }
+
+ .UX {
+     background-color: #485F8C;
+ }
+
+ .Web1 {
+     background-color: #485F8C;
+ }
+
 
  /*
 
@@ -135,6 +175,8 @@
      opacity: 1;
      right: 0;
  }
+
+ nth-of-type(odd) {}
 
  /*Knap slut*/
 
