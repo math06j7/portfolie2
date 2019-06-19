@@ -194,7 +194,6 @@
      right: 0;
  }
 
- nth-of-type(odd) {}
 
  /*Knap slut*/
 
@@ -236,6 +235,16 @@
  }
 
 
+ /*Om mig*/
+
+
+ #imgom img {
+     height: 100vh;
+ }
+
+ /*Om mig slut*/
+
+
 
  .footer {
      background-color: #485F8C;
@@ -259,7 +268,7 @@
      }
 
      .splash {
-         background-position: 62% 0%;
+         background-position: 20% 70%;
      }
 
      .menu-button {
