@@ -72,6 +72,7 @@
 
  p {
      margin: 5px;
+     font-family: "raleway", sans-serif;
  }
 
 
@@ -142,13 +143,16 @@
      background-color: #485F8C;
  }
 
- .UX {
+ .tech {
      background-color: #485F8C;
  }
 
- .Web1 {
-     background-color: #485F8C;
+ .app {
+     background-color: #D8D8D8;
+
  }
+
+
 
 
  /*Knap start*/
@@ -257,7 +261,12 @@
  }
 
 
- @media only screen and (max-width: 750px) {
+
+
+ @media only screen and (min-width: 750px) {
+
+
+
      .gridContent {
          display: grid;
          grid-template-columns: 1fr;
@@ -268,7 +277,8 @@
      }
 
      .splash {
-         background-position: 20% 70%;
+         background-image: url(img/Splash750.png);
+
      }
 
      .menu-button {
